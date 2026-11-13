@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart - Balar's Apparel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Balar's Apparel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="cart.html" aria-current="page">Cart</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart-container">
+      <div class="cart-header">
+        <img src="balarlogo.png" alt="Balar's Apparel logo" class="cart-logo">
+        <h2>Your Shopping Cart</h2>
+      </div>
+
+      <div class="table-responsive">
+        <table class="carttable">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+      </div>
+
+      <div class="checkout-summary">
+        <div class="summary-row">
+          <span>Subtotal:</span>
+          <span id="subtotal">&#8369;0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping:</span>
+          <span class="free-shipping">FREE</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Estimated Total:</span>
+          <span id="total">&#8369;0.00</span>
+        </div>
+        <button type="button" class="btn checkout-btn" onclick="checkout()">
+          Proceed to Checkout
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Balar's Apparel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

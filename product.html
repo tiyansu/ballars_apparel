@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balar's Apparel - Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Balar's Apparel</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html" aria-current="page">Product</a>
+      <a href="cart.html">Cart</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="catalog">
+      <h2>Products</h2>
+
+      <!-- Filter: click a button to show only that category -->
+      <div class="options">
+        <button type="button" class="btn active" onclick="show('all', this)">All</button>
+        <button type="button" class="btn" onclick="show('hoodies', this)">Hoodies</button>
+        <button type="button" class="btn" onclick="show('tshirts', this)">T-Shirts</button>
+        <button type="button" class="btn" onclick="show('caps', this)">Caps</button>
+        <button type="button" class="btn" onclick="show('pants', this)">Pants</button>
+      </div>
+
+
+      <div class="products">
+        <div class="card" data-category="hoodies">
+          <img src="hoodie1.jpg" alt="Pullover Hoodie">
+          <h3>Pullover Hoodie</h3>
+          <p class="price">&#8369;1,500.00</p>
+	  <h5>A comfortable hoodie that keeps you warm and gives you a stylish streetwear look.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="hoodies">
+          <img src="hoodie2.jpg" alt="Zip-Up Hoodie">
+          <h3>Zip-Up Hoodie</h3>
+          <p class="price">&#8369;1,700.00</p>
+	  <h5>A cozy hoodie with a front zipper, perfect for layering and everyday wear.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="tshirts">
+          <img src="tshirt1.jpg" alt="Basic Tee">
+          <h3>Basic Tee</h3>
+          <p class="price">&#8369;500.00</p>
+	  <h5>A simple and comfortable T-shirt that is easy to pair with any outfit.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="tshirts">
+          <img src="tshirt2.jpg" alt="Graphic Tee">
+          <h3>Graphic Tee</h3>
+          <p class="price">&#8369;650.00</p>
+	  <h5>A stylish T-shirt with a bold graphic design for a unique and trendy look.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="caps">
+          <img src="cap1.jpg" alt="Baseball Cap">
+          <h3>Baseball Cap</h3>
+          <p class="price">&#8369;400.00</p>
+	  <h5>A casual cap that protects you from the sun while adding style to your outfit.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+        <div class="card" data-category="caps">
+          <img src="cap2.jpg" alt="Snapback Cap">
+          <h3>Snapback Cap</h3>
+          <p class="price">&#8369;450.00</p>
+	  <h5>A trendy cap with an adjustable back closure, perfect for a cool streetwear look.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+	<div class="card" data-category="pants">
+          <img src="pants1.jpg" alt="Baggy Denim Pants">
+          <h3>Baggy Denim Pants</h3>
+          <p class="price">&#8369;499.00</p>
+	  <h5>Loose-fitting denim pants that provide comfort and a relaxed, modern style.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+
+	<div class="card" data-category="pants">
+          <img src="pants2.jpg" alt="Trouser">
+          <h3>Trouser</h3>
+          <p class="price">&#8369;399.00</p>
+	  <h5>Versatile trousers that offer a clean and stylish look for casual or semi-formal occasions.</h5>
+          <button type="button" class="btn">Add to Cart</button>
+        </div>
+      </div>
+
+      <p id="empty" class="empty" hidden>No products found.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Balar's Apparel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
